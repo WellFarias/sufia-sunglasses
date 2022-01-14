@@ -1,1 +1,15 @@
-<p>storefront works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <mat-grid-list  cols="4"  rowHeight="4:4" gutterSize="20px">
+    <mat-grid-tile *ngFor="let product of resources" style="padding: 2px">
+      <mat-card class="card mat-elevation-z0">
+        <img [src]="product.pictures[0]" alt="" srcset="">
+        <p><strong>{{ product.name }}</strong></p>
+        <span class="price">{{ product.price }}</span>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list >
+
+</div>

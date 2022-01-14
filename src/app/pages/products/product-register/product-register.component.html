@@ -1,1 +1,47 @@
-<p>product-register works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+  <h2>Cadastro de Produtos</h2>
+
+  <br>
+
+  <mat-grid-list cols="2" rowHeight="5rem" gutterSize="20px">
+    <mat-grid-tile colspan="1">
+      <mat-form-field class="w-full" appearance="outline" color="accent">
+        <mat-label>Nome do Produto</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1">
+      <mat-form-field class="w-full" appearance="outline" color="accent">
+        <mat-label>Modelo</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1">
+      <mat-form-field class="w-full" appearance="outline" color="accent">
+        <mat-label>Preço</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1">
+      <mat-form-field class="w-full" appearance="outline" color="accent">
+        <mat-icon color="accent" matSuffix>image</mat-icon>
+        <mat-label>Imagens</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <button class="w-full" mat-button color="accent">Cancelar</button>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <button class="w-full" mat-raised-button color="accent">Salvar</button>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>

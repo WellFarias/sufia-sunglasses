@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatSelectModule,
     MatToolbarModule,
     MatCardModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatGridListModule,
   ],
   exports: [
     MatTabsModule,
@@ -41,7 +43,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatSelectModule,
     MatToolbarModule,
     MatCardModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatGridListModule
   ]
 })
 export class MaterialModule { }
