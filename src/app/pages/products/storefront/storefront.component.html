@@ -1,15 +1,44 @@
 <app-navbar></app-navbar>
 
 <div class="container">
+    <div class="main">
+        <div class="filter-content">
 
-  <mat-grid-list  cols="4"  rowHeight="4:4" gutterSize="20px">
-    <mat-grid-tile *ngFor="let product of resources" style="padding: 2px">
-      <mat-card class="card mat-elevation-z0">
-        <img [src]="product.pictures[0]" alt="" srcset="">
-        <p><strong>{{ product.name }}</strong></p>
-        <span class="price">{{ product.price }}</span>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list >
+            <div class="filter-item">
+                <span>Óculos de sol</span>
+            </div>
 
+            <div class="filter-item">
+                <span>Receituários</span>
+            </div>
+
+            <div class="filter-item">
+                Aviador
+            </div>
+
+            <div class="filter-item">
+                <span>Redondos</span>
+            </div>
+
+            <div class="filter-item">
+                <span>Clip On</span>
+            </div>
+        </div>
+
+        <div class="product-content">
+
+            <div *ngFor="let product of resources">
+                <app-product-card [cardItems]="product"></app-product-card>
+            </div>
+
+            <!-- <app-product-card></app-product-card>
+            <app-product-card></app-product-card>
+            <app-product-card></app-product-card>
+            <app-product-card></app-product-card> -->
+        </div>
+    </div>
 </div>
+
+
+
+

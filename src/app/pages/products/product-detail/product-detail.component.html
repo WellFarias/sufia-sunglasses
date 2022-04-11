@@ -1,1 +1,29 @@
-<p>product-detail works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="main">
+        <div class="product-image">
+            <img [src]="product.picture">
+        </div>
+
+        <div class="product-info">
+
+            <h1>
+                <b>{{product.name}}</b>
+            </h1>
+
+            <h2>{{product.price}}</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate fugiat. Saepe, reprehenderit perferendis.
+                Temporibus, aperiam, ea est natus molestiae sapiente eum corporis sint illum laborum, mollitia itaque deleniti quibusdam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore neque, rem nobis ullam doloribus non nam ex consequatur,
+                suscipit ea consequuntur iste unde voluptate numquam amet atque temporibus aut et.
+            </p>
+
+            <br>
+
+            <button class="btn">Comprar</button>
+        </div>
+    </div>
+</div>

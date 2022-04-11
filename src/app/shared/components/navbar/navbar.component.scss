@@ -1,6 +1,39 @@
-.nav {
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: white;
-  box-shadow: 1px 1px 15px 1px rgba(160, 160, 160, 0.705);
+@media (min-width: 992px) {
+    .nav {
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: white;
+        box-shadow: 1px 1px 15px 1px rgba(160, 160, 160, 0.705);
+        display: block;
+
+        & .toolbar {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .nav-mobile {
+        display:  none;
+    }
+}
+
+@media(max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        position: fixed;
+        z-index: 10;
+        padding-left: 1%;
+        padding-right: 1%;
+        background-color: white;
+        box-shadow: 1px 1px 15px 1px rgba(160, 160, 160, 0.705);
+        display: block;
+
+        & .toolbar {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }

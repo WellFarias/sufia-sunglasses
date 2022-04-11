@@ -12,39 +12,46 @@ import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    MatTabsModule,
-    MatInputModule,
-    MatRadioModule,
-    MatButtonModule,
-    MatSlideToggleModule,
-    MatListModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatBadgeModule,
-    MatGridListModule,
-  ],
-  exports: [
-    MatTabsModule,
-    MatInputModule,
-    MatRadioModule,
-    MatButtonModule,
-    MatSlideToggleModule,
-    MatListModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatBadgeModule,
-    MatGridListModule
-  ]
+    declarations: [],
+    imports: [
+        MatTabsModule,
+        MatInputModule,
+        MatRadioModule,
+        MatButtonModule,
+        MatSlideToggleModule,
+        MatListModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatBadgeModule,
+        MatGridListModule,
+        MatSnackBarModule,
+        MatSidenavModule
+    ],
+    exports: [
+        MatTabsModule,
+        MatInputModule,
+        MatRadioModule,
+        MatButtonModule,
+        MatSlideToggleModule,
+        MatListModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatBadgeModule,
+        MatGridListModule,
+        MatSnackBarModule,
+        MatSidenavModule
+    ]
 })
+
 export class MaterialModule { }

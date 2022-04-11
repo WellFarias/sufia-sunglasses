@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
-import { BaseResourceListComponent } from 'src/app/shared/components/base-resource-list/base-resource-list.component';
+import { GenericResourceListComponent } from 'src/app/shared/components/generic-resource-list/generic-resource-list.component';
 import { Product } from '../product-shared/product.model';
 import { ProductService } from '../product-shared/product.service';
 
 @Component({
-  selector: 'app-storefront',
-  templateUrl: './storefront.component.html',
-  styleUrls: ['./storefront.component.scss']
+    selector: 'app-storefront',
+    templateUrl: './storefront.component.html',
+    styleUrls: ['./storefront.component.scss']
 })
 
-export class StorefrontComponent extends BaseResourceListComponent<Product> {
+export class StorefrontComponent extends GenericResourceListComponent<Product> {
 
-  // products: Array<Product> = [];
+    // O array está vindo de resources, de GenericResourceListComponent
+    // products: Array<Product> = [];
 
-  constructor(protected productService: ProductService) {
-    super(productService)
-  }
+    constructor(protected productService: ProductService) {
+        super(productService);
+    }
 }

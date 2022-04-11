@@ -5,18 +5,17 @@ import { StorefrontComponent } from './storefront/storefront.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductRegisterComponent } from './product-register/product-register.component';
 
-
-
 @NgModule({
-  declarations: [
-    StorefrontComponent,
-    ProductDetailComponent,
-    ProductRegisterComponent
-  ],
+    declarations: [
+        StorefrontComponent,
+        ProductDetailComponent,
+        ProductRegisterComponent
+    ],
 
-  imports: [
-    CommonModule,
-    SharedModule
-  ]
+    imports: [
+        CommonModule,
+        SharedModule
+    ]
 })
+
 export class ProductsModule { }

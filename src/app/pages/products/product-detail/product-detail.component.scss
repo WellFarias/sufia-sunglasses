@@ -1,0 +1,45 @@
+.main {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'product-image';
+    gap: 16px;
+
+
+    & .product-image {
+        grid-area: product-image;
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius:  10px;
+        padding: 1%;
+
+        & img {
+        width: 100%;
+        }
+    }
+}
+
+b {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:576px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'product-image';
+        margin-top: 4rem;
+        width:  95%;
+    }
+}

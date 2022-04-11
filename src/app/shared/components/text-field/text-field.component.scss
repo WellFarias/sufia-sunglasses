@@ -1,0 +1,53 @@
+.form-content {
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.text-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    width: 90%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.field-label {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.25);
+    transition: .3s;
+}
+
+.icon-field {
+    position: absolute;
+    right: 1rem;
+    top: .8rem;
+}
+
+.text-field:focus + .field-label {
+    top: -.5rem;
+    left: 5%;
+    color: dodgerblue;
+    z-index: 10;
+}
+
+.text-field:not(:placeholder-shown).text-field:not(:focus) + .field-label {
+    top: -.5rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.text-field:focus {
+    border: 1.5px solid dodgerblue;
+}

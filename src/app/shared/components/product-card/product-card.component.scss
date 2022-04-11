@@ -1,0 +1,44 @@
+.product-front {
+    text-decoration: none;
+    .card {
+        padding: 10px;
+        height: 240px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+
+        &:hover {
+            transition: 0.5s;
+            transform: translateY(-5px);
+            box-shadow: 0 2px 4px rgba(160, 160, 160, 0.705);
+        }
+
+        & img {
+            width: 100%;
+            height: 75%;
+            object-fit: contain;
+        }
+
+        & p {
+            & strong {
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        & .price {
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    strong {
+        font-size:  small;
+    }
+
+    .price {
+        font-size:  small;
+    }
+ }
+
+
+

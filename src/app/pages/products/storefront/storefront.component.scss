@@ -1,21 +1,90 @@
-.card {
-  padding: 10px;
-  width: 230px;
-  height: 240px;
-  border-radius: 0;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  &:hover {
-    transition: 0.5s;
-    transform: translateY(-5px);
-    box-shadow: 0 2px 4px rgba(160, 160, 160, 0.705);  }
+.main {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'filter-content product-content';
+    gap: 16px;
+
+    & .filter-content {
+        grid-area: filter-content;
+        padding: 0 1rem 0 1rem;
+
+        & .filter-item {
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+        }
+
+        & .filter-item:hover {
+            cursor: pointer;
+            background-color: pink;
+            transition: 0.5s;
+            color: white;
+        }
+    }
+
+    & .product-content {
+        grid-area: product-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  1fr;
+        gap: 16px;
+    }
 }
 
-img {
-  width: 100%;
-  height: 75%;
-  object-fit: contain;
+@media (max-width:992px) {
+    .main {
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'filter-content product-content';
+
+        & .product-content {
+            display: grid;
+            grid-area: product-content;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+ }
+
+@media (max-width:768px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'product-content';
+
+        & .filter-content {
+            display: none;
+        }
+
+        & .product-content {
+            display: grid;
+            grid-area: product-content;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+ }
+
+ @media (max-width:576px) {
+   .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'product-content';
+
+        & .filter-content {
+            display: none;
+        }
+
+        & .product-content {
+            display: grid;
+            grid-area: product-content;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            margin-top:  3.5rem;
+        }
+    }
 }
 
-.price {
-  color: #a0a0a0;
-}

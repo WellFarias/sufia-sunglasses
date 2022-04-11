@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 import { ProductsModule } from '../pages/products/products.module';
+import { LoginModuleModule } from '../pages/login/login.module';
 
 @NgModule({
   declarations: [],
@@ -12,7 +13,8 @@ import { ProductsModule } from '../pages/products/products.module';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ProductsModule
+    ProductsModule,
+    LoginModuleModule
   ],
 
   exports: [

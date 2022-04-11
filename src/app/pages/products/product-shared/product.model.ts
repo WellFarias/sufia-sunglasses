@@ -1,17 +1,17 @@
-import { BaseResourceModel } from "src/app/shared/models/base-resource.model";
+import { GenericResourceModel } from 'src/app/shared/models/generic-resource.model';
 
-export class Product extends BaseResourceModel {
-  constructor(
-    public id?: string,
-    public name?: string,
-    public model?: string,
-    public price?: string,
-    public pictures?: Array<string>
-  ) {
-    super()
-  }
+export class Product extends GenericResourceModel {
+    constructor (
+        public id?: string,
+        public name?: string,
+        public model?: string,
+        public price?: string,
+        public picture?: string
+    ) {
+        super();
+    }
 
-  static fromJson(jsonData: any): Product {
-    return Object.assign(new Product(), jsonData);
-  }
+    static fromJson(jsonData: any): Product {
+        return Object.assign(new Product(), jsonData);
+    }
 }

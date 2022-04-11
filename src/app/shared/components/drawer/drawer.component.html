@@ -1,0 +1,38 @@
+<mat-drawer-container class="example-container" *ngIf="drawerActive">
+  <mat-drawer-content class="drawer-content">
+
+    <button (click)="closeModal()" class="btn-transparent">
+        <img src="assets/icons/arrow-left.svg">
+    </button>
+
+    <div class="avatar-content w-full">
+
+        <div class="avatar">
+            <img src="assets/WhatsApp Image 2022-03-03 at 16.24.07.jpeg" alt="" srcset="">
+        </div>
+
+        <h3 class="text-center display-name">Karla Brandão</h3>
+
+        <div class="drawer-menu">
+
+            <div class="divider"></div>
+
+            <span><img class="icon" src="assets/icons/home.svg"> Inicio</span>
+
+            <span><img class="icon" src="assets/icons/cart.svg">Carrinho</span>
+
+            <span><img class="icon" src="assets/icons/avatar.svg">Minha conta</span>
+
+            <span><img class="icon" src="assets/icons/setting.svg">Opções</span>
+
+            <span><img class="icon" src="assets/icons/box-order.svg">Meus pedidos</span>
+
+            <div class="divider"></div>
+
+            <span><img class="icon" src="assets/icons/logout.svg">Sair</span>
+        </div>
+
+    </div>
+
+  </mat-drawer-content>
+</mat-drawer-container>

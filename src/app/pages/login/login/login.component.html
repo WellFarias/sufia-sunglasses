@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card">
+        <h1 class="header">Criar conta</h1>
+
+        <form [formGroup]="resourceForm">
+            <app-text-field [parentForm]="resourceForm" fieldName="displayName" type="text" name="displayName" label="Nome"></app-text-field>
+
+            <app-text-field [parentForm]="resourceForm" fieldName="phoneNumber" type="tel" name="phoneNumber" label="Telefone"></app-text-field>
+
+            <app-text-field [parentForm]="resourceForm" fieldName="photoUrl" type="text" name="photoUrl" label="Imagem" icon="assets/icons/camera.svg"></app-text-field>
+
+            <app-text-field [parentForm]="resourceForm" fieldName="email" type="text" name="email" label="Email"></app-text-field>
+
+            <app-text-field [parentForm]="resourceForm" fieldName="password" type="password" name="password" label="Senha" icon="assets/icons/close-eye.svg"></app-text-field>
+
+            <button type="submit" (click)="submitForm()" class="btn">CADASTRAR</button>
+        </form>
+    </div>
+</div>
